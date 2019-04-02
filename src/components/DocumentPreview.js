@@ -17,20 +17,12 @@ class DocumentPreview extends Component {
   }
   render() {
     return (
-      <Card style={{ width: "16rem" }} className="Zoom">
+      <Card style={{ width: "16rem" }} className="Zoom Title">
         <Card.Title className="Title">
           {this.props.title}
-          <Card.Subtitle className="mb-2 Subtitle">
-            {this.props.author}
-          </Card.Subtitle>
+          <Card.Subtitle className="Title">{this.props.author}</Card.Subtitle>
         </Card.Title>
-        <Card.Img variant="top" src="bibliofile.png" />
-        <Card.Body>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-        </Card.Body>
+        <Card.Img className="Title" variant="top" src="ToTheSame.png" />
       </Card>
     );
   }
